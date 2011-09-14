@@ -1,0 +1,1 @@
+import redef find_replace(lines, find, replace_):  return [re.sub(pattern=find, repl=replace_, string=line) for line in lines]if __name__ == "__main__":  print replace(["foo", "bar", "baz"], "[aeiou]", "y")

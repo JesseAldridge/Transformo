@@ -1,0 +1,1 @@
+import markdowndef markdown_(s):  return markdown.markdown(s).encode('utf8')  if __name__ == '__main__':  print markdown_('http://google.com')
