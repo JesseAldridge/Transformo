@@ -2,6 +2,8 @@
 Transformo
 ===========
 
+![screenshot](http://dl.dropbox.com/u/135901/transformo.png)
+
 Basic Usage:
 
 - Paste some text into the box on the left

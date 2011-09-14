@@ -11,8 +11,7 @@ from transform_window import transform_window
 def transform_controls(filename, control_layout, main_edits):
   # Import the transform func.  Make a button.  Inspect the arguments.
   func_name = splitext(filename)[0]
-  exec('from jca.tools.transform.transforms.%s import %s as func' %
-     (func_name, func_name))
+  exec('from transforms.%s import %s as func' % (func_name, func_name))
   parm_edits = []
   button = QPushButton(func_name.replace("_", " "))
   arg_names = inspect.getargspec(func)[0]
@@ -54,6 +53,7 @@ class ParmEdit(QLineEdit):
 app = QApplication(sys.argv)
 window = transform_window()
 window.resize(1400, 600)
+window.setWindowTitle('Trasformo')
 transforms_dir = 'transforms'
 for root, dirs, files in os.walk(transforms_dir):
   for filename in [file for file in files if file.endswith('.py') and
