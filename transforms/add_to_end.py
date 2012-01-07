@@ -7,4 +7,4 @@ def add_to_end(lines, s):
   return new_lines
   
 if __name__ == "__main__":
-  print add_to_end(["foo", "  foo"], " + ")
+  print add_to_end(["foo", "  bar"], " + ")

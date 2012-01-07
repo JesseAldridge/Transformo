@@ -1,4 +1,8 @@
 
+
+**I ported this thing to javascript, check it out:  http://dl.dropbox.com/u/135901/transformo.html**
+
+
 Transformo
 ===========
 
